@@ -10,6 +10,32 @@
   </head>
 
   <body>
-    <%= yield %>
+    <div id="container">
+      <div id="header">
+        <img src="/assets/mori2.png" alt="">
+        <%= render "header" %>
+      </div>
+      
+      <div id="pageBody">
+                <h2>okubo ryohei</h2>
+                <p>@okubo1999</p>
+                
+                <h2>プロフィール</h2>
+                <ul>
+                <p>大学生</p>
+                <p>福岡</p>
+                </ul>
+            </div>
+            
+      <div id="sidebar">
+        <%= render "sidebar" %>
+      </div>
+      <div id="content">
+        <%= yield %>
+      </div>
+      <div id="footer">
+        <%= render "footer" %>
+    </div>
+  </div>
   </body>
 </html>
